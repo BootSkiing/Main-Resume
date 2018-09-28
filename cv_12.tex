@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Connor Jackson's botched together resume!
+% Shout out to Deedy for the template! Very smart man
+% Feel free to fork this and use it yourself! That's basically what I did
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\usepackage{graphicx,xcolor,fontawesome}
+
+\begin{document} % Marks the start of the page
+%
+%--------------------------------------------------------
+%	TITLE SECTION
+%--------------------------------------------------------
+%
+
+
+%\lastupdated       %This puts the "last edited" date at the top. un-comment if you want that
+
+\namesection{Connor}{Jackson} %First and Last name
+{ % If you'd like to make any edits to the formatting of the title (ie: font, color, etc.) check out the .cls file that came paired with this
+{\large Seeking an Internship in Computer Security for Summer 2019\par} % Goals
+\sectionspace
+\faEnvelope\space\href{mailto:connortheguy12@gmail.com}{connortheguy12@gmail.com} %email
+{\space | \space} %space to avoid congestion
+\faPhone\space (603)-724-7430 \\ % phone
+\faGithub\space\space \urlstyle{same}\url{www.github.com/Bootskiing} %github
+{\space | \space}
+\faLinkedin\space\urlstyle{same}\url{www.linkedin.com/in/connor-jackson-3b471a162/} %linkedin
+}
+
+%
+%------------------------------------------------
+%	LEFT COLUMN
+%------------------------------------------------
+%
+
+\begin{minipage}[t]{0.49\textwidth} % Left column takes up 49% of the text width of the page because LaTeX
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{Rochester Institute}
+\subsection{of Technology}
+
+\descript{B.S. in Computing Security}
+\location{Class of 2022}
+
+\sectionspace % Some whitespace after the section
+\sectionspace
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+\section{Skills}
+
+\subsection{Programming}
+\descript{\urlstyle{same}\url{www.github.com/BootSkiing/Xmas-Calender}} % using \url{} puts a nice hyperlink in the pdf
+Experience programming in:
+\sectionspace
+\begin{tightitemize}
+\item Python % Each item is a bullet, feel free to add more!
+\item Java
+\item \LaTeX % Stylizes LaTeX logo
+\item Arduino
+\end{tightitemize}
+
+\sectionspace
+
+\subsection{Strong with \textit{Solidworks}}
+\descript{\urlstyle{same}\url{www.github.com/BootSkiing/Wood-Lathe}}
+\begin{tightitemize}
+\item \textit{Solidworks} Associate Certification\\Familiar with \textit{Fusion 360} and \textit{Sketchup}
+\end{tightitemize}
+
+\sectionspace
+
+\subsection{Public Speaking}
+\sectionspace % I had to put double space here because words were overlapping..?
+\sectionspace
+\begin{tightitemize}
+\item 3 Years public speaking experience through 4H 
+\end{tightitemize}
+
+
+\sectionspace % Some whitespace after the section
+\sectionspace
+
+%------------------------------------------------
+% Organizations
+%------------------------------------------------
+\section{Organizations} 
+
+\subsection{Computer Security\\ Ambassador}
+
+\sectionspace % Double whitespace after each org. because I think it looks nice
+\sectionspace
+\subsection{Computer Science House}
+
+\sectionspace
+\sectionspace
+\subsection{4H Club}
+\descript{Club president 2017-18\\ Member 2011-18}
+
+\sectionspace
+\sectionspace
+\subsection{NHS and NEHS}
+\descript{Vice President of both, 2016-18}
+
+\sectionspace % Some whitespace after the section
+\sectionspace
+
+%------------------------------------------------
+% Previous Work
+%------------------------------------------------
+\section{Previous Work}
+
+\subsection{Landscaping}
+\location{Essie Hull, 2017-18}
+\sectionspace
+\subsection{Berry Picker}
+\location{Hackleboro Orchards, 2012-15}
+
+\end{minipage} % The end of the left column
+\hfill % Fills in any whitespace beneath
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.5\textwidth} % Right column takes up 50% of the text width of the page because formatting
+
+%------------------------------------------------
+% projects
+%------------------------------------------------
+\section{Projects}
+
+\runsubsection{DIY Arduino "Bad USB"} 
+% You can put \descript{} here if you want; I don't 
+\location{April-June 2016} % I use \location{} for dates because I think it looks nice. Confusing, I know
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Worked with Digispark board to emulate keyboard presses
+\item Wrote auto-executing code using keyboard library to fetch saved passwords and download files
+\item Used to demonstrate the possible consequences of a "USB Drive-By" attack
+\end{tightitemize}
+
+
+\sectionspace % Some whitespace after the section
+
+
+\runsubsection{Quadcopter Drone 3D Print and Design}
+\descript{\urlstyle{same}\url{www.github.com/BootSkiing/3D-Printed-Drone}}
+\location{Aug-Dec 2017}
+\begin{tightitemize}
+\item Researched, designed, and assembled a working quadcopter
+\item Used CAD software \textit{Solidworks} to design/prototype a frame, paying attention to mass and structural integrity % The \textit{} in this line italicizes the word
+\item Learned skills in 3D printing, soldering, and in-depth knowledge of how components communicate
+\end{tightitemize}
+
+
+\sectionspace % Some whitespace after the section
+
+
+\runsubsection{"Smart Garden" High School Revamp}
+\descript{\urlstyle{same}\url{www.github.com/BootSkiing/Garden}}
+\location{Aug 2017- May 2018}
+\begin{tightitemize}
+\item A community service project to completely overhaul local High School garden with new soil, plants, and covered beds
+\item Designed, but did not implement, automated watering system using Arduino that would utilize moisture sensors, relays, and solenoid valves
+\item Gained experience with chop saws/wood working, garden design, and time management
+\end{tightitemize}
+
+\sectionspace
+
+%------------------------------------------------
+% Extra Curric.
+%------------------------------------------------
+\section{Extracurriculars}
+
+\subsection{Cross Country}
+\begin{tightitemize}
+\sectionspace % The space here is necessary to avoid overlapping 
+\sectionspace
+\item 2 Seasons, 2016-17
+\end{tightitemize}
+
+\sectionspace
+\subsection{Track and Field}
+\begin{tightitemize}
+\sectionspace
+\sectionspace
+\item 5 Seasons, 2015-18
+\item Distance Runner
+\end{tightitemize}
+
+\sectionspace
+\subsection{Karate}
+\begin{tightitemize}
+\sectionspace
+\sectionspace
+\item 8 Years
+\item Worked with instructors to assist novice members
+\end{tightitemize}
+
+\end{minipage} % End of Left Column
+
+\end{document} % Marks the end of the document! Look at all those lines!
